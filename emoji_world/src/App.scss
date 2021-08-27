@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primary_color:rgb(4, 164, 185);
+$secondary_color:rgb(202, 0, 40);
+*,*::before,*::after
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.row
+{
+    display: flex;
+    justify-content: center;
+    &>*{
+        flex:1 1;
+
+    }
+}
+.App
+{
+margin:2em;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    h1
+    {
+        text-transform: uppercase;
+        color: $primary_color;
+    }
+.btn_group
+{
+    display: flex;
+    button{
+        color: white;
+        outline: none;
+        // border-radius: .3em;
+        border: none;
+        padding: .8em .8em;
+        cursor: pointer;
+        &.emoji_button
+        {
+            background: $primary_color;
+        }
+        &.emoji_name_button
+        {
+            background: $secondary_color;
+
+        }
+      }
+     
+}
+input
+{
+    width: 40%;
+    outline: none;
+    border-radius: .3em;
+    border: none;
+    background: rgba(0, 0, 0, 0.123);
+    padding: .8em .8em;
+    margin-bottom: 1rem;
+}
+.emoji_container
+{
+    overflow-y: scroll;
+    height: 74vh;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.137);
+    background: $primary_color;
+padding: 2em;
+color:white;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+h3{
+    height: 100%;
+    text-transform: uppercase;
+    display: grid;
+    place-content: center;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.emoji_info
+{
+    background: rgb(11, 33, 36);
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 2em;
+    // align-items:space-around;
+
+    span
+    {
+        display: inline-block;
+        // width: 6rem;
+        margin-bottom: 1em;
+        border-radius: .3em;
+        padding: .5em .8em;
+        background: $primary_color;
+        color:white;
+
+
+    }
+    &>*{
+        text-align: center;  
+    }
+  
+  .emoji
+  {
+font-size: 2.5rem;
+text-align: center;
+  }  
+  .emoji_desc
+  {
+
+  }
+  .emoji_aliases
+  {
+
+  }
+  .emoji_category
+  {
+
+  }
+
+}
+}
+.emoji_box
+{
+padding: 2em;
+    background: $secondary_color;
+    h2
+    {
+        text-align: center;
+        color: white;
+        margin-bottom: 1em;
+    }
+}
+}
