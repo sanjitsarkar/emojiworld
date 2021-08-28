@@ -225,6 +225,7 @@ button {
 
 @media screen and (max-width: 900px) {
   .App .emoji_container {
+    overflow-x: hidden;
     border-bottom: .2rem solid;
   }
 }

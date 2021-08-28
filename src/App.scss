@@ -179,6 +179,8 @@ gap: 1rem;
 @media screen and (max-width:900px) {
 //     padding: .5rem;
 // gap: 1rem;
+overflow-x: hidden;
+
 border-bottom: .2rem solid;
 }
 h3{
@@ -244,7 +246,7 @@ text-align: center;
     }
     @media screen and (max-width:900px) {
 outline: none;
-word-wrap: break-word;;
+word-wrap: break-word;
     // margin-bottom: 1em;
 
 // :not(span)
