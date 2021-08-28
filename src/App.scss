@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$primary_color:rgb(4, 164, 185);
-$secondary_color:rgb(202, 0, 40);
+$primary_color:#F34636;
+$secondary_color:#eeb600;
+$dark_color:#1d1d1b;
 *,*::before,*::after
 {
     padding: 0;
@@ -11,7 +12,7 @@ $secondary_color:rgb(202, 0, 40);
 body{
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-background: #0B2124;
+background: $dark_color;
 @media screen and (max-width:900px) {
     font-size: 70%;
 }
@@ -77,8 +78,11 @@ margin:2rem;
     {
         text-transform: uppercase;
         font-size: 2.5rem;
-        color: $primary_color;
+        color: lighten($secondary_color,10);
         margin-bottom:1rem ;
+        span{
+            color: white;
+        }
     }
 .btn_group
 {
@@ -119,12 +123,12 @@ form{
         background: $secondary_color;
     }
     ::placeholder{
-        color:rgba(255, 255, 255, 0.699);
+        color:rgba(42, 40, 40, 0.699);
     }
 input
 {
     
-    color: white;
+    // color: rgba(0, 0, 0, 0.274);
     width: 46%;
     @media screen and (max-width:900px) {
     width: 78%;
@@ -134,7 +138,7 @@ input
     border-top-left-radius: .3em;
     border-bottom-left-radius: .3em;
     border: none;
-    background: rgba(255, 255, 255, 0.274);
+    background: rgba(255, 255, 255, 0.904);
     padding: .8rem .8rem;
 }
 }
@@ -187,7 +191,8 @@ h3{
 }
 .emoji_info
 {
-    background: rgb(11, 33, 36);
+    // background: rgb(11, 33, 36);
+    background: darken($primary_color,10);
     display: flex;
     flex-direction: column;
     gap:1rem;
@@ -239,7 +244,7 @@ text-align: center;
     }
     @media screen and (max-width:900px) {
 outline: none;
-
+word-wrap: break-word;;
     // margin-bottom: 1em;
 
 // :not(span)

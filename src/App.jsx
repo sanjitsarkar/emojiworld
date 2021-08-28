@@ -132,7 +132,7 @@ setLoading(false)
 // }, [emojiName])
   return (
     <div className="App">
-     <h1>Emoji World</h1>
+     <h1>Emoji <span>World</span></h1>
      <div className="btn_group">
      <button className="emoji_button" onClick={()=>{
        setShowEmojiInput1(true)
