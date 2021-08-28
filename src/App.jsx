@@ -40,6 +40,7 @@ const searchEmojiInfoByEmoji = (e,__emoji) => {
   e.preventDefault()
   if(__emoji!==undefined)
   {
+  setEmojiInfo("")
     setEmoji(__emoji)
     setLoading(true)
 emojiWorker2.postMessage([emojiDict,__emoji])
