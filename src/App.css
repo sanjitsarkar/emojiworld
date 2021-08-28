@@ -253,6 +253,12 @@ button {
   padding: 1rem;
 }
 
+@media screen and (max-width: 900px) {
+  .App .emoji_container .emoji_info {
+    gap: .1rem;
+  }
+}
+
 .App .emoji_container .emoji_info span {
   font-size: .9rem;
   display: inline-block;
@@ -280,7 +286,7 @@ button {
 }
 
 .App .emoji_container .emoji_info .emoji_desc :not(span), .App .emoji_container .emoji_info .emoji_aliases :not(span), .App .emoji_container .emoji_info .emoji_category :not(span) {
-  padding: 1em;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -294,6 +300,9 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .App .emoji_container .emoji_info .emoji_desc :not(span), .App .emoji_container .emoji_info .emoji_aliases :not(span), .App .emoji_container .emoji_info .emoji_category :not(span) {
+    padding: .5rem;
   }
 }
 
