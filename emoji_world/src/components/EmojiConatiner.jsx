@@ -1,16 +1,19 @@
 import React from 'react'
 
-const EmojiConatiner = ({emojies}) => {
+const EmojiConatiner = ({emojies,loading}) => {
 // console.log("emojicontainer",emojies)
     return (
         <div className="emoji_container">
-            
+            {emojies==="" && !loading && <h3>Search Emoji</h3>}
+            {
+                loading && <h3>Loading...</h3>
+            }
               {
                 !emojies.length && emojies!=="" && (<h3>No Info found</h3>)
             }
             {
-                emojies!==""?
-                emojies.map((_emoji)=>
+                
+                emojies!=="" && emojies.map((_emoji)=>
                 
                     (<div className="emoji_info" key={_emoji.aliases}>
                  <div className="emoji">{_emoji.emoji}</div>
@@ -22,7 +25,7 @@ const EmojiConatiner = ({emojies}) => {
                 </div>
                 )
             
-                ):(<h3>Search Emoji</h3>)
+                )
             }
           
         </div>

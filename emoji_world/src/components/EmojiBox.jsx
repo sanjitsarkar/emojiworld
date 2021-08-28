@@ -11,7 +11,7 @@ const EmojiBox = ({emojiDict,searchEmojiInfoByEmoji}) => {
             <span
               style={{ fontSize: "2rem", cursor: "pointer" }}
               key={emoji.emoji}
-              onClick={() => searchEmojiInfoByEmoji(emoji.emoji)}
+              onClick={(e) => searchEmojiInfoByEmoji(e,emoji.emoji)}
             >
               {emoji.emoji}{" "}
             </span>
