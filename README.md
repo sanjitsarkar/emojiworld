@@ -15,5 +15,5 @@
     npm run dev
     ```
 ---
-#### To live preview the app click the link [MovieRecom](https://xemoji.netlify.app/)
+#### To live preview the app click the link [EmojiWorld](https://xemoji.netlify.app/)
 
